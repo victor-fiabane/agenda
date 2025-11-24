@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.mainMobile {
+    display: none;
+}
+header {
+    
+    display: flex;
+    background-color: rgb(0, 161, 81);
+    align-items: center;
+    justify-content: end;
+    height: 4em;
+    padding: 1em;
+}
+
+header nav {
+    display: block;
+    background-color: transparent;
+    padding: 1em;
+}
+
+
+#container-consultas {
+    min-height: 100vh;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-image: white;
+}
+
+
+
+#recado h1 {
+    color: black;
+}
+
+#recado p {
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: 250ms;
+}
+
+a:hover {
+    color: rgb(0, 175, 53);
+    
+}
+
+#linkDeletar:hover{
+     color: rgb(175, 0, 0);
+}
+
+.botoes {
+    background-color: #ffffff;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px #4c485f;
+    transition: 250ms;
+    margin: 1em;
+}
+
+.botoes:hover {
+    background-color: #e4e4e4;
+    border: none;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.botoes p {
+    color: black;
+}
+
+
+.titulo {
+    margin-top: 0.5em;
+    font-size: 2.5em;
+    color: #080808;
+    text-decoration: underline;
+}
+
+
+.consultas {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30em;
+    height: 30em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 4em;
+
+}
+
+
+.consultas h2 {
+    font-size: 3.5vh;
+    color: #080808;
+    max-width: 80vh;
+    text-align: justify;
+
+}
+
+.consultas h3 {
+    color: #080808;
+    font-size: 2.5vh;
+}
+
+
+.btnsConsultas {
+    display: flex;
+    -ms-flex-direction: row;
+    margin: 1vh;
+}
+
+a {
+    font-size: 1.5em;
+}

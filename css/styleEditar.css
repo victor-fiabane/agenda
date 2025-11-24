@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* Garante que o conteúdo será centralizado */
+    align-items: center;
+    /* Garante que o conteúdo será centralizado verticalmente */
+    min-height: 100vh;
+    /* Garante que o body ocupe toda a altura da tela */
+    max-width: 100vw;
+    overflow-x: hidden;
+    flex-direction: column;
+    /* Organiza os elementos na direção de coluna */
+}
+
+
+
+
+/*  Desktop CSS */
+
+
+#mainMobile {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+}
+
+#mainPc {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100vw;
+    background-image: white;
+}
+
+#formMainPc {
+    height: 100vh;
+    width: 100vw;
+}
+
+#mainText p {
+    font-size: 50px;
+    position: relative;
+
+}
+
+#mainText {
+    left: 36.5%;
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+
+-----===== Title Section =====-----
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡼⠛⣙⠛⠳⢦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣰⠋⣰⣿⠿⠿⢷⣦⡈⢻⡀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⡎⢠⣦⠀⣴⣿⠃⠀⣶⣦⣤⣁⠀⣇⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⢀⡾⢀⣿⠃⢰⣿⣿⠀⠀⠙⠿⠿⣿⡧⢸⡇⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⣼⠀⣼⡏⢀⣿⣿⣿⣷⣤⣀⣀⡀⠀⢀⡼⠃⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⢿⠐⠿⠀⣼⣿⣿⣿⣿⣿⣿⣿⡿⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⢈⡷⠀⣶⣿⣿⠛⠿⣿⣿⣿⣿⠃⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⢸⡅⠸⢿⡿⢃⡄⢠⣤⣬⡿⢃⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⠀⠉⠳⠤⠴⢿⣄⠻⠿⢋⣠⠏⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠳⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+*/
+#title {
+    float: left;
+    height: 100vh;
+    width: 30em;
+    overflow: hidden;
+    position: relative;
+    filter: brightness(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleText {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color: rgb(0, 161, 81);
+    font-size: 4vw;
+    text-shadow: 5px 5px 15px rgb(204, 204, 204);
+
+}
+
+#subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+
+
+header {
+    width: 100vw;
+    display: flex;
+    background-color: rgb(0, 161, 81);
+    align-items: center;
+    justify-content: end;
+    height: 4em;
+    padding: 1em;
+}
+
+header nav {
+    display: block;
+    background-color: transparent;
+    padding: 1em;
+}
+
+.botoes {
+    background-color: #ffffff;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px #4c485f;
+    transition: 250ms;
+    margin: 1em;
+}
+
+.botoes:hover {
+    background-color: #e4e4e4;
+    border: none;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.botoes p {
+    color: black;
+}
+
+
+
+/*
+
+-----===== Inputs section ======------
+
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣥⣤⣾⠟⡛⠿⠿⣭⣻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⡟⣿⣽⡟⡏⢩⣦⡝⠋⢸⣶⠄⢲⡟⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣯⣷⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣌⡳⣜⢿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢀⡛⢌⢿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠄⠙⠌⣸⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⡿⠉⠉⠉⠉⢿⣿⣿⣿⠏⠉⠉⠉⠉⠉⠆⠄⠁⠄⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⡗⠫⠿⠆⠄⠸⢿⣿⣿⠂⠒⠲⡿⠛⠛⠂⠄⠄⢠⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⡛⣧⡔⠢⠴⣃⣠⣼⣿⣧⡀⠘⢢⣀⠄⠄⠄⠄⠄⢈⠁⢿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣿⠄⠄⠄⣸⠆⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣼⢿⣿⣿⣿⣿⡀⠄⠘⡀⢠⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⡌⠿⣫⣿⣦⠬⢭⣥⣶⣬⣾⣿⢿⣿⡟⠄⢀⣿⣶⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣧⠘⣉⠛⢻⣛⣛⣛⣻⡶⠮⠙⠃⣉⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⡆⠸⣿⣶⢾⣿⣯⣤⣄⣀⣾⡟⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿
+⠟⠿⠿⠿⠿⢿⣷⠄⣿⣿⣎⣹⢻⣿⣿⡿⡿⠁⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿
+⠄⠄⠄⠄⠄⠄⠄⣠⠘⣿⣿⣿⣿⣿⣿⡟⠁⣀⣀⣀⠄⠘⠿⣿⣿⣿⣿⣿⣿⣿
+
+
+*/
+
+#inputs {
+    float: right;
+    background-color: transparent;
+    width: 100vw;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputsSubdiv {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30em;
+    height: 25em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1em;
+    padding: 2em;
+}
+
+#dados {
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    background-color: transparent;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 0.1em;
+    float: right;
+}
+
+.btnSubmit {
+    width: 10em;
+    margin: 1em;
+    transition: 0.8s;
+}
+
+.btnSubmit:hover {
+    width: 10em;
+    margin: 1em;
+    transform: scale(1.2);
+    
+}
+
+
+/*  Mobile CSS 
+
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⣶⢠⣾⣿⣿⣶⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀
+ ⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣦⣀⣀⡀⠀⠀⠀ 
+ ⠀⠀⡀⠤⠤⢤⣿⣿⣿⣿⣿⣿⣿⡏⠈⣿⣿⣿⣿⣿⣿⣿⣿⣍⣴⣶⣾⣵⡄⠀ 
+ ⠀⣬⣾⠿⢷⣮⣿⣿⡿⠛⠉⠉⠉⠉⠀⠀⠀⠈⠉⠙⢿⣿⣿⣿⣿⡇⠉⠉⡹⠀ 
+ ⠀⢉⠀⢀⢸⢿⣿⣿⠀⠠⡲⣶⠶⡆⠀⡶⢛⣉⡠⡂⠀⢿⣿⣿⡟⣡⠿⠎⠁⠀ 
+ ⠀⠀⠑⠻⠳⣼⣿⣿⡄⠈⠘⠿⠓⠙⠀⠃⠚⠛⠁⠀⠀⢸⣿⣿⣿⡅⠊⠀⠀⠀ 
+ ⠀⠀⠀⠀⠀⠊⢽⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣿⣿⣿⡙⠃⠀⠀⠀⠀ 
+ ⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⡗⠀⠀⠐⠄⠔⠀⠀⠀⠀⢻⣿⣿⣟⢷⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠘⢹⣿⣿⡅⠀⠀⠀⠀⠀⠀⠀⠀⣀⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀ 
+  ⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣦⣤⣤⣤⣤⠤⠔⣊⣿⣿⣿⣟⢿⡇⠀⠀⠀⠀⠀ 
+  ⠀⠀⠀⠀⠀⠀⠀⠘⡟⣿⣿⣷⡐⠶⠶⠶⠖⢻⣿⣿⣿⣿⣿⠀⠃⠀⠀⠀⠀⠀ 
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⠻⣿⣷⣶⣶⣶⣿⡏⠻⣿⠈⠻⠀⠀⠀⠀⠀⠀⠀ 
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⠀⠹⣿⡇⠀⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⡆⠀⠹
+
+
+
+*/
+@media only screen and (max-width: 768px) {
+    #mainPc {
+        display: none;
+    }
+
+    #formMainPc {
+        display: none;
+    }
+
+    #mainText p {
+        display: none;
+    }
+
+    #mainText {
+        display: none;
+    }
+
+    #title {
+        display: none;
+    }
+
+    #mainMobile {
+        background-image: linear-gradient(rgb(200, 200, 200), rgb(200, 200, 200), rgb(50, 50, 50));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #mainMob {
+        background-image: linear-gradient(rgb(200, 200, 200), rgb(200, 200, 200), rgb(50, 50, 50));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #submitDiv {
+        margin-top: 50px;
+        height: 10vh;
+        width: 25vw;
+        display: flex;
+        font-size: medium;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #inputs {
+        width: 100%;
+    }
+
+    #inputsSubdiv {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textarea input {
+        font-family: "Poppins", sans-serif;
+        height: 40px;
+        font-size: 80%;
+    }
+
+
+
+    /* fazer css do mobile :) */
+    #input4 {
+        width: 80%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #input4 input {
+        height: 30%;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #input5 input {
+        height: 30%;
+        border-radius: 10px;
+        padding: 5px 85px 5px 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #input5 {
+        width: 80%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #input6 input {
+        height: 30%;
+        border-radius: 10px;
+        padding: 5px 85px 5px 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #input6 {
+        width: 80%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input4div {
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input5div {
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input6div {
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #inputTitle {
+        align-self: center;
+    }
+
+    #eixoMobile {
+        height: 50%;
+        width: 80%;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        background-color: rgb(158, 158, 158);
+        border: 2px solid black;
+    }
+}

@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.mainMobile {
+    display: none;
+}
+
+
+header {
+    display: flex;
+    background-color: rgb(148, 148, 148);
+    align-items: center;
+    justify-content: end;
+    height: 4em;
+    padding: 1em;
+}
+
+header nav {
+    display: block;
+    background-color: transparent;
+    padding: 1em;
+}
+
+
+#container-truck {
+    min-height: 100vh;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(226, 226, 226), rgb(50, 50, 50));
+}
+
+
+
+#recado h1 {
+    color: black;
+}
+
+#recado p {
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: 250ms;
+}
+
+a:hover {
+    color: rgb(209, 209, 3);
+    ;
+}
+
+.botoes {
+    background-color: #ffffff;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px #4c485f;
+    transition: 250ms;
+    margin: 1em;
+}
+
+.botoes:hover {
+    background-color: #e4e4e4;
+    border: none;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.botoes p {
+    color: black;
+}
+
+
+.titulo {
+    font-size: 3.5em;
+    color: #080808;
+    text-decoration: underline;
+}
+
+
+.trucks {
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px 0px black;
+    padding: 1em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh;
+    max-width: 100vh;
+    min-width: 100vh;
+
+}
+
+
+.trucks h2 {
+    font-size: 3.5vh;
+    color: #080808;
+    max-width: 80vh;
+    text-align: justify;
+
+}
+
+.trucks h3 {
+    color: #080808;
+    font-size: 2.5vh;
+}
+
+
+.btnsTruck {
+    display: flex;
+    -ms-flex-direction: row;
+    margin: 1vh;
+}
+
+a {
+    font-size: 1.5em;
+}
+
+/* MObile abaixo manitos */
+
+@media only screen and (max-width: 768px) {
+    .mainPc {
+        display: none;
+    }
+
+    .mainMobile {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: auto;
+        background-color: transparent;
+        overflow: hidden;
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(226, 226, 226), rgb(50, 50, 50));
+    }
+
+    header {
+        display: flex;
+        background-color: transparent;
+        align-items: end;
+        justify-content: center;
+        height: 10em;
+        padding: 1em;
+    }
+
+    header nav {
+        display: block;
+        background-color: grey;
+        border-radius: 15px;
+    }
+
+
+    #container-truck {
+        min-height: calc(100vh - 10em);
+        height:auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: none;
+        overflow: none;
+       
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        transition: 250ms;
+    }
+
+    a:hover {
+        color: rgb(209, 209, 3);
+        ;
+    }
+
+    .botoes {
+        background-color: #ffffff;
+        border: none;
+        color: white;
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+        box-shadow: 2px 5px 5px #4c485f;
+        transition: 250ms;
+        margin: 1em;
+    }
+
+    .botoes:hover {
+        background-color: #e4e4e4;
+        border: none;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .botoes p {
+        color: black;
+    }
+
+
+    .titulo {
+        font-size: 1em;
+        color: #080808;
+        text-decoration: underline;
+    }
+
+
+    .trucks {
+        background-color: whitesmoke;
+        box-shadow: 0px 0px 10px 0px black;
+        padding: 1em;
+        border-radius: 0.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3em;
+        width: 35vh;
+        height: auto;
+        min-width: 0vw;
+    }
+
+
+    .trucks h2 {
+        font-size: 3.5vh;
+        color: #080808;
+        max-width: 80vh;
+        text-align: justify;
+
+    }
+
+    .trucks h3 {
+        color: #080808;
+        font-size: 2.5vh;
+    }
+
+
+    .btnsTruck {
+        display: flex;
+        -ms-flex-direction: row;
+        margin: 1vh;
+    }
+
+    a {
+        font-size: 1.5em;
+    }
+
+
+
+}

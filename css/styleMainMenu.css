@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* Garante que o conteúdo será centralizado */
+    align-items: center;
+    /* Garante que o conteúdo será centralizado verticalmente */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    /* Organiza os elementos na direção de coluna */
+}
+
+
+/*  Desktop CSS */
+
+
+#mainMobile {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+}
+
+#mainPc {
+    height: 100vh;
+    width: 100vw;
+    background-image: white;
+}
+
+#containerMobile {
+    display: none;
+}
+
+
+
+/*
+
+-----===== Title Section =====-----
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡼⠛⣙⠛⠳⢦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣰⠋⣰⣿⠿⠿⢷⣦⡈⢻⡀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⡎⢠⣦⠀⣴⣿⠃⠀⣶⣦⣤⣁⠀⣇⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⢀⡾⢀⣿⠃⢰⣿⣿⠀⠀⠙⠿⠿⣿⡧⢸⡇⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⣼⠀⣼⡏⢀⣿⣿⣿⣷⣤⣀⣀⡀⠀⢀⡼⠃⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⢿⠐⠿⠀⣼⣿⣿⣿⣿⣿⣿⣿⡿⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⢈⡷⠀⣶⣿⣿⠛⠿⣿⣿⣿⣿⠃⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⢸⡅⠸⢿⡿⢃⡄⢠⣤⣬⡿⢃⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⠀⠉⠳⠤⠴⢿⣄⠻⠿⢋⣠⠏⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠳⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀AMOGUS
+
+*/
+#title {
+    float: left;
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    filter: brightness(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pneu_home {
+    position: absolute;
+    height: 101vh;
+    width: 20vw;
+}
+
+.titleText {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color:rgb(0, 161, 81);
+    font-size: 4vw;
+    text-shadow: 5px 5px 15px rgb(204, 204, 204);
+}
+
+#subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+
+/*
+
+-----===== Inputs section ======------
+
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣥⣤⣾⠟⡛⠿⠿⣭⣻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⡟⣿⣽⡟⡏⢩⣦⡝⠋⢸⣶⠄⢲⡟⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣯⣷⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣌⡳⣜⢿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢀⡛⢌⢿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠄⠙⠌⣸⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⡿⠉⠉⠉⠉⢿⣿⣿⣿⠏⠉⠉⠉⠉⠉⠆⠄⠁⠄⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⡗⠫⠿⠆⠄⠸⢿⣿⣿⠂⠒⠲⡿⠛⠛⠂⠄⠄⢠⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⡛⣧⡔⠢⠴⣃⣠⣼⣿⣧⡀⠘⢢⣀⠄⠄⠄⠄⠄⢈⠁⢿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣿⠄⠄⠄⣸⠆⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣼⢿⣿⣿⣿⣿⡀⠄⠘⡀⢠⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⡌⠿⣫⣿⣦⠬⢭⣥⣶⣬⣾⣿⢿⣿⡟⠄⢀⣿⣶⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣧⠘⣉⠛⢻⣛⣛⣛⣻⡶⠮⠙⠃⣉⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⡆⠸⣿⣶⢾⣿⣯⣤⣄⣀⣾⡟⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿
+⠟⠿⠿⠿⠿⢿⣷⠄⣿⣿⣎⣹⢻⣿⣿⡿⡿⠁⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿
+⠄⠄⠄⠄⠄⠄⠄⣠⠘⣿⣿⣿⣿⣿⣿⡟⠁⣀⣀⣀⠄⠘⠿⣿⣿⣿⣿⣿⣿⣿
+
+
+*/
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 100vh;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 2em;
+    width: 30em;
+    height: auto;
+
+}
+
+.btnMenu {
+
+    padding: 1em;
+    border: 0px;
+    box-shadow: black 1px 10px 20px;
+    border-radius: 10px;
+    transition: 0.8s;
+    width: 45vh;
+}
+
+a {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    width: 45vh;
+    margin: 1.5em;
+
+}
+
+.btnMenu:hover {
+    transform: scale(1.2);
+
+}
+
+.btnMenu h1 {
+    font-size: 2em;
+}
+
+
+
+
+
+/*  Mobile CSS 
+
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⣶⢠⣾⣿⣿⣶⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀
+ ⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣦⣀⣀⡀⠀⠀⠀ 
+ ⠀⠀⡀⠤⠤⢤⣿⣿⣿⣿⣿⣿⣿⡏⠈⣿⣿⣿⣿⣿⣿⣿⣿⣍⣴⣶⣾⣵⡄⠀ 
+ ⠀⣬⣾⠿⢷⣮⣿⣿⡿⠛⠉⠉⠉⠉⠀⠀⠀⠈⠉⠙⢿⣿⣿⣿⣿⡇⠉⠉⡹⠀ 
+ ⠀⢉⠀⢀⢸⢿⣿⣿⠀⠠⡲⣶⠶⡆⠀⡶⢛⣉⡠⡂⠀⢿⣿⣿⡟⣡⠿⠎⠁⠀ 
+ ⠀⠀⠑⠻⠳⣼⣿⣿⡄⠈⠘⠿⠓⠙⠀⠃⠚⠛⠁⠀⠀⢸⣿⣿⣿⡅⠊⠀⠀⠀ 
+ ⠀⠀⠀⠀⠀⠊⢽⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣿⣿⣿⡙⠃⠀⠀⠀⠀ 
+ ⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⡗⠀⠀⠐⠄⠔⠀⠀⠀⠀⢻⣿⣿⣟⢷⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠘⢹⣿⣿⡅⠀⠀⠀⠀⠀⠀⠀⠀⣀⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀ 
+  ⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣦⣤⣤⣤⣤⠤⠔⣊⣿⣿⣿⣟⢿⡇⠀⠀⠀⠀⠀ 
+  ⠀⠀⠀⠀⠀⠀⠀⠘⡟⣿⣿⣷⡐⠶⠶⠶⠖⢻⣿⣿⣿⣿⣿⠀⠃⠀⠀⠀⠀⠀ 
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⠻⣿⣷⣶⣶⣶⣿⡏⠻⣿⠈⠻⠀⠀⠀⠀⠀⠀⠀ 
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⠀⠹⣿⡇⠀⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⡆⠀⠹
+
+
+
+*/
+@media only screen and (max-width: 768px) {
+
+    #containerMain {
+        display: none;
+
+    }
+
+    #containerMobile {
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(226, 226, 226), rgb(50, 50, 50));
+        width: 100vw;
+        height: 100vh;
+        padding: 0px;
+        margin: 0px;
+        height: auto;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: transparent;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        padding: 2em;
+        width: auto;
+        height: auto;
+
+    }
+
+    #title {
+        height: 45vh;
+        width: 50%;
+        overflow: hidden;
+        position: relative;
+        filter: brightness(50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+
+    }
+
+    .titleText {
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        color: rgb(255, 255, 0);
+        font-size: 8vw;
+        text-shadow: 5px 5px 15px black;
+        overflow: visible;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 0px;
+        margin: 0px;
+        width: 15em;
+        margin: 1.5em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnMenu {
+        width: 15em;
+        margin: 1em;
+        padding: 1em;
+        border: 0px;
+        box-shadow: black 1px 10px 20px;
+        border-radius: 10px;
+        transition: 0.8s;
+    }
+
+
+    .btnMenu h1 {
+        font-size: 2em;
+    }
+
+
+}
